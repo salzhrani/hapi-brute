@@ -38,17 +38,17 @@ server.route({
 	config: {plugins: {brute: true}},
 	handler: function (request, reply) {
 		const user = request.auth.credentials.username;
-	reply.brute('username', user, (err, reset)=> {
-		if(validUser(user)) {
-			// reset the counter for the user
-			// after a valid attempt
-			reset((err)=> {
-				reply('welcome ' + username);
-			});
-		} else {
-			reply('Invalid username/password');
-		}
-	});
+		reply.brute('username', user, (err, reset)=> {
+			if(validUser(user)) {
+				// reset the counter for the user
+				// after a valid attempt
+				reset((err)=> {
+					reply('welcome ' + username);
+				});
+			} else {
+				reply('Invalid username/password');
+			}
+		});
     	}
 });
 ```
@@ -60,19 +60,19 @@ server.route({
 	config: {plugins: {brute: true}},
 	handler: function (request, reply) {
 		const user = request.auth.credentials.username;
-	reply.brute('username', user)
-	.then((reset)=> {
-		if(validUser(user)) {
-			// reset the counter for the user
-			// after a valid attempt
-			return reset()
-			.then(() => {
-				reply('welcome ' + username);
-			});
-		} else {
-			reply('Invalid username/password');
-		}
-	});
+		reply.brute('username', user)
+		.then((reset)=> {
+			if(validUser(user)) {
+				// reset the counter for the user
+				// after a valid attempt
+				return reset()
+				.then(() => {
+					reply('welcome ' + username);
+				});
+			} else {
+				reply('Invalid username/password');
+			}
+		});
     	}
 });
 ```
