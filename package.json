@@ -1,0 +1,26 @@
+{
+  "name": "hapi-brute",
+  "version": "1.0.0",
+  "repository": "https://github.com/salzhrani/hapi-brute",
+  "description": "Hapi bruteforce prevention",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib/**",
+    "test": "lab -r console -t 90 -a code -L",
+    "test-cov-html": "lab -r html -o coverage.html -a code -L"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^3.0.0",
+    "hapi": ">=11.x.x",
+    "joi": "^7.0.0"
+  },
+  "devDependencies": {
+    "code": "^2.0.0",
+    "eslint": "^1.8.0",
+    "eslint-config-hapi": "^5.0.0",
+    "eslint-plugin-hapi": "^2.0.0",
+    "lab": "^7.1.0"
+  }
+}
