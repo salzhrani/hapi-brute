@@ -11,7 +11,7 @@
     	"no-var": 2,
     	"semi": 2,
     	"arrow-body-style": 2,
-    	"hapi/no-shadow-relaxed": [1, { "ignore": ["err", "res"]}]
+    	"no-shadow": [1, { "allow": ["err", "res"]}]
     },
     "extends": "hapi"
 }

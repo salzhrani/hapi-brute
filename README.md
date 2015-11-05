@@ -49,7 +49,7 @@ server.route({
 				reply('Invalid username/password');
 			}
 		});
-    	}
+    }
 });
 ```
 #### promise example
@@ -73,7 +73,7 @@ server.route({
 				reply('Invalid username/password');
 			}
 		});
-    	}
+    }
 });
 ```
 ### Plugin options
