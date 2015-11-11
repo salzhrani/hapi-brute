@@ -9,7 +9,7 @@
     "test": "lab -r console -t 90 -a code -L",
     "test-cov-html": "lab -r html -o coverage.html -a code -L"
   },
-  "author": "",
+  "author": "Samy Alzhrani",
   "license": "ISC",
   "dependencies": {
     "boom": "^3.0.0",
