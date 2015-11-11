@@ -18,8 +18,8 @@
   },
   "devDependencies": {
     "code": "^2.0.0",
-    "eslint": "^1.8.0",
-    "eslint-config-hapi": "^6.0.0",
+    "eslint": "^1.9.0",
+    "eslint-config-hapi": "^6.1.1",
     "lab": "^7.2.0"
   }
 }
