@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/salzhrani/hapi-brute.svg)](https://travis-ci.org/salzhrani/hapi-brute)
+
 **Brute** adds brute force mitigation to [**hapi**](https://github.com/hapijs/hapi)-based application servers. It creates a Fibonacci sequence to delay responses, if the maximum allowed calls is exhausted, the route returns `429` status with a `Retry-After` header indicating how long a client should wait before attempting to call.
 
 ## Installation
